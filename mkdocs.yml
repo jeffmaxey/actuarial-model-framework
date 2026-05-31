@@ -1,0 +1,52 @@
+site_name: actuarial-model-framework
+repo_url: https://github.com/jeffmaxey/actuarial-model-framework
+site_url: https://jeffmaxey.github.io/actuarial-model-framework
+site_description: Actuarial Model Framework is a structured approach to building and managing actuarial models.
+site_author: Jeff Maxey
+edit_uri: edit/main/docs/
+repo_name: jeffmaxey/actuarial-model-framework
+copyright: Maintained by <a href="https://jeffmaxey.com">jeffmaxey</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["actuarial_model_framework"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jeffmaxey/actuarial-model-framework
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/actuarial-model-framework
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
